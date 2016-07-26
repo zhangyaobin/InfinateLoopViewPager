@@ -1,0 +1,3 @@
+# InfinateLoopViewPager
+
+无限循环的ViewPager，可以放在listview或scrollview中
