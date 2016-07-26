@@ -2,7 +2,6 @@ package com.zhangyaobin.infiniteloopviewpager;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -80,7 +79,6 @@ public class ViewPagerAdapter extends PagerAdapter {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 //                 Toast.makeText(mContext, "点击事件", Toast.LENGTH_LONG).show();
-                Log.d("zhangyaobin","mOnBannerClickListener="+mOnBannerClickListener);
                 if (mOnBannerClickListener != null) {
 //                        跳转至对应的界面
 

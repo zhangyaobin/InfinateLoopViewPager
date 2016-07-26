@@ -29,7 +29,7 @@ public class MainActivity extends Activity implements ViewPager.OnPageChangeList
 
         mMyViewPager = (MyViewPager) findViewById(R.id.MyViewPager);
         mDotLayout = (LinearLayout) findViewById(R.id.DotLayout);
-        mCountdownTimer = new CountdownTimer(3000, 1000);
+        mCountdownTimer = new CountdownTimer(5000, 1000);
         initData();
         currentItem = mAdImageList.size() < 2 ? 1
                 : mAdImageList.size() * 10;
@@ -109,7 +109,8 @@ public class MainActivity extends Activity implements ViewPager.OnPageChangeList
 
     @Override
     public void onPageSelected(int i) {
-        setDotBackground(i % mAdImageList.size());
+        currentItem=i;
+        setDotBackground(currentItem % mAdImageList.size());
     }
 
     @Override
